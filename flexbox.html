@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container {
+            border: 1px solid #333;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            text-align: center;
+            padding: 50px 10px;
+        }
+
+        #box1 {
+            background-color: lightskyblue;
+        }
+
+        #box2 {
+            background-color: lightcoral;
+        }
+
+        #box3 {
+            background-color: lightgrey;
+        }
+
+        #box4 {
+            background-color: lightsteelblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

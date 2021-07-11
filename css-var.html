@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS var</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --text-color: white;
+            --background-color: lightblue;
+            --border-style: 5px solid slateblue;
+        }
+
+        .side-nav,
+        main {
+            float: left;
+            height: 90vh;
+        }
+
+        .side-nav {
+            background-color: lightcyan;
+            width: 200px;
+        }
+
+        main {
+            background-color: lightgray;
+            width: calc(100% - 200px);
+        }
+
+        footer {
+            clear: both;
+            border: var(--border-style);
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="side-nav">
+            Side nav
+        </nav>
+        <main>
+            Main section
+        </main>
+    </section>
+    <footer>
+        <p>This is footer</p>
+    </footer>
+</body>
+
+</html>
